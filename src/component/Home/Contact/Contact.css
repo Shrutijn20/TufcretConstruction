@@ -1,0 +1,90 @@
+#contact {
+    padding: 7rem 0 6rem;
+    overflow: hidden;
+}
+.sectionTitle {
+    margin: 0.5rem 0 3rem;
+    font-size: 2rem;
+    font-weight: 700;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 0.6rem;
+}
+.sectionTitle::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 100px;
+    border-radius: 70px;
+    height: 4px;
+    background: #CE5959;
+}
+
+.contactForm {
+    padding: 1rem;
+}
+.contactForm input,
+.contactForm textarea {
+    width: 100%;
+    margin: 0.5rem 0;
+    padding: 1rem 0.8rem;
+    border-radius: 0.3rem;
+    border: 1px solid #bebebe;
+    color: #000;
+}
+.contactForm input:focus,
+.contactForm textarea:focus {
+    outline: none !important;
+    border: 1px solid #CE5959;
+    background-color: rgb(243, 240, 255);
+}
+.contactForm textarea {
+    height: 120px;
+}
+
+/* CSS */
+.btnn{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #3B3B3B;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  line-height: normal;
+  margin: 0;
+  height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 35%;
+  will-change: transform;
+}
+
+.btnn:disabled {
+  pointer-events: none;
+}
+
+.btnn:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.btnn:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
